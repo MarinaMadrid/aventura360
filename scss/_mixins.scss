@@ -1,0 +1,15 @@
+//FLEXBOX------------------------------------------------------------------------
+@mixin flexbox($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+/* Mixin de Grid */
+@mixin grid-layout {
+    display: grid;
+    grid-template-areas:
+    "article1 image article3"
+    "article2 image article4"
+  }
