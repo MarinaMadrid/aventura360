@@ -176,6 +176,14 @@ header button {
 }
 .main__galeria article {
   padding: 1em;
+  box-sizing: border-box;
+}
+.main__galeria figure {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
 }
 .main__galeria figcaption {
   color: #25a2c3;
@@ -185,16 +193,23 @@ header button {
   border: 1px solid #bbb;
   border-top: 0;
   border-bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 .main__galeria p {
   border: 1px solid #bbb;
   border-top: 0;
   padding-bottom: 1em;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 .main__galeria img {
   display: block;
+  width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  box-sizing: border-box;
 }
 
 /*CONTACTO------------------------------------------------------------------------------*/

@@ -169,6 +169,15 @@ header{
 
     article{
         padding: 1em;
+        box-sizing: border-box;
+    }
+
+    figure{
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     figcaption{
@@ -179,18 +188,25 @@ header{
         border: 1px solid map-get($colores, lightgray-color);
         border-top: 0;
         border-bottom: 0;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     p{
         border: 1px solid map-get($colores, lightgray-color);
         border-top: 0;
         padding-bottom: 1em;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     img{
         display: block;
+        width: 100%;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
+        box-sizing: border-box;
     }
 }
 
