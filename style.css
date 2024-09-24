@@ -183,7 +183,6 @@ header button {
   justify-content: space-between;
   padding: 1em;
   box-sizing: border-box;
-  min-height: 100%;
 }
 .main__galeria figure {
   margin: 0;
@@ -204,7 +203,6 @@ header button {
   box-sizing: border-box;
 }
 .main__galeria p {
-  flex-grow: 1;
   border: 1px solid #bbb;
   border-top: 0;
   padding: 1em;
@@ -266,7 +264,7 @@ footer a {
 }
 
 /* Pantallas más pequeñas */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 980px) {
   header h1 {
     font-size: 2em;
   }
