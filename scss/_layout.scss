@@ -164,10 +164,16 @@ header{
 /*GALERIA*/
 .main__galeria{
     @include flexbox();
+    flex-wrap: wrap;
     padding: 5em;
     text-align: center;
 
     article{
+        flex: 1 1 30%;
+        margin: 1em;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between;
         padding: 1em;
         box-sizing: border-box;
     }
@@ -183,7 +189,7 @@ header{
     figcaption{
         color: map-get($colores, blue-color);  
         font-weight: bolder; 
-        padding-top: 1em;
+        padding: 1em;
         padding-bottom: 1em;
         border: 1px solid map-get($colores, lightgray-color);
         border-top: 0;
@@ -195,7 +201,7 @@ header{
     p{
         border: 1px solid map-get($colores, lightgray-color);
         border-top: 0;
-        padding-bottom: 1em;
+        padding: 1em;
         margin: 0;
         width: 100%;
         box-sizing: border-box;
@@ -207,6 +213,8 @@ header{
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         box-sizing: border-box;
+        max-width: 100%; // Asegura que la imagen no sobresalga
+        height: auto; 
     }
 }
 
